@@ -1,0 +1,33 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(230, 231, 237);
+}
+
+h1 {
+    font-size: 48px;;
+}
+
+#img-div {
+    background-color: white;
+}
+
+#image {
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+ul {
+    text-align: left;
+    display: inline-block;
+    margin: 0px auto 50px auto;
+}
+
+li {
+    max-width: 550px;
+    margin: 16px 0;
+}
