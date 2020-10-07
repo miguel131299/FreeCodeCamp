@@ -5,6 +5,7 @@ body {
 
 main {
     background-color: rgb(230, 231, 237);
+    border-radius: 5px;
 }
 
 h1 {
@@ -13,12 +14,18 @@ h1 {
 
 #img-div {
     background-color: white;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 #image {
     background-color: white;
     max-width: 100%;
     max-height: 100%;
+}
+
+figcaption {
+    margin: 15px;
 }
 
 ul {
@@ -30,4 +37,22 @@ ul {
 li {
     max-width: 550px;
     margin: 16px 0;
+}
+
+#tribute-info {
+    font-size: 1.1em;
+}
+
+#quote {
+    max-width: 550px;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+
+#extra-information {
+    font-size: 1.2em;
+    padding-bottom: 15px;
 }
