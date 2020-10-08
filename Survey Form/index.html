@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/survey.css">
+</head>
+<body>
+    <main>
+        <header>
+
+            <h1 id="title">TUM Survey Form</h1>
+
+            <p id="description">Thank you for taking the time to help us improve the university</p>
+
+        </header>
+
+
+        <form id="survey-from">
+
+            <div>
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+                <label id="email-label" for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="Enter your E-Mail" required>
+            </div>
+
+            <div>
+                <label id="number-label" for="numsem">Number of Semesters</label>
+                <input type="number" id="numsem" name="number-semesters" min="1" max="30" placeholder="Number of semesters enrolled at TUM">
+            </div>
+
+            <div>
+                <label id="faculty-label" for="faculty">Select the best faculty at TUM</label>
+                <select name="faculty" id="faculty">
+                    <option value="Aerospace and Geodesy">Aerospace and Geodesy</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Civil, Geo and Environmental Engineering">Civil, Geo and Environmental Engineering</option>
+                    <option value="Electrical and Computer Engineering">Electrical and Computer Engineering</option>
+                    <option value="Informatics">Informatics</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Sport and Health Sciences">Sport and Health Sciences</option>
+                    <option value="TUM School of Education">TUM School of Education</option>
+                    <option value="TUM School of Governance">TUM School of Governance</option>
+                    <option value="TUM School of Life Sciences">TUM School of Life Sciences</option>
+                    <option value="TUM School of Management">TUM School of Management</option>
+                    <option value="TUM School of Medicine">TUM School of Medicine</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Select the best TUM Campus</p>
+
+                <input type="radio" id="Munich" name="campus" value="Munich">
+                <label for="Munich">Munich</label>
+
+                <input type="radio" id="Garching" name="campus" value="Garching">
+                <label for="Garching">Garching</label>
+
+                <input type="radio" id="Weihenstephan" name="campus" value="Weihenstephan">
+                <label for="Weihenstephan">Weihenstephan</label>
+
+                <input type="radio" id="Straubing" name="campus" value="Straubing">
+                <label for="Straubing">Straubing</label>
+
+                <input type="radio" id="Heilbronn" name="campus" value="Heilbronn">
+                <label for="Heilbronn">Heilbronn</label>
+
+                <input type="radio" id="TUM-Asia" name="campus" value="TUM-Asia">
+                <label for="TUM-Asia">TUM-Asia (GIST)</label>
+            </div>
+
+            <div>
+
+                <p>Select the levels of education you have reached at TUM</p>
+
+                <input type="checkbox" id="Bachelor" name="Bachelor" value="Bachelor">
+                <label for="Bachelor">Bachelor's Degree</label>
+
+                <input type="checkbox" id="Master" name="Master" value="Master">
+                <label for="Master">Master's Degree</label>
+
+                <input type="checkbox" id="Medical" name="Medical" value="Medical">
+                <label for="Medical">Medical Studies</label>
+
+                <input type="checkbox" id="Doctorate" name="Doctorate" value="Doctorate">
+                <label for="Doctorate">Doctorate</label>
+
+                <input type="checkbox" id="Studienkolleg" name="Studienkolleg" value="Studienkolleg">
+                <label for="Studienkolleg">Preparatory Study at the Studienkolleg</label>
+            </div>
+
+            <div>
+                <label for="feedback">Any comments or suggestions? Leave your Feedback!</label>
+
+                <textarea id="feedback" name="feedback" rows="8" cols="75">Enter your comment here:</textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+    </main>
+</body>
+</html>
