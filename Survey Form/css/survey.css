@@ -1,3 +1,15 @@
 body {
-    background-image: url("images/TUM Uhrenturm.jpg");
+    /*Setting up background image*/
+    /*background-image: url("../images/Munich.jpg");*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(44, 113, 180);
+
+    /*Setting up Text*/
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+
 }
+
