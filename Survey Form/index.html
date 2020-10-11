@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/survey.css">
 </head>
 <body>
     <main>
         <header>
 
-            <h1 id="title">TUM Survey Form</h1>
+            <img id="logo" src="/Survey Form/images/TUM Logo(Cropped).png" alt="TUM Logo">
+            <h1 id="title">Survey Form</h1>
 
-            <p id="description">Thank you for taking the time to help us improve the university</p>
+            <p id="description">Thank you for taking the time to help us improve our university</p>
 
         </header>
 
 
-        <form id="survey-from">
+        <form id="survey-form">
 
-            <div>
+            <div class="form-group">
                 <label id="name-label" for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input class="input-group" type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label id="email-label" for="email">E-Mail</label>
-                <input type="email" id="email" name="email" placeholder="Enter your E-Mail" required>
+                <input type="email" class="input-group" id="email" name="email" placeholder="Enter your E-Mail" required>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label id="number-label" for="numsem">Number of Semesters</label>
-                <input type="number" id="numsem" name="number-semesters" min="1" max="30" placeholder="Number of semesters enrolled at TUM">
+                <input type="number" class="input-group" id="numsem" name="number-semesters" min="1" max="30" placeholder="Number of semesters enrolled at TUM">
             </div>
 
-            <div>
+            <div class="form-group">
                 <label id="faculty-label" for="faculty">Select the best faculty at TUM</label>
-                <select name="faculty" id="faculty">
+                <select class="input-group" name="faculty" id="faculty">
+                    <option disabled selected value>Select your favorite faculty</option>
                     <option value="Aerospace and Geodesy">Aerospace and Geodesy</option>
                     <option value="Architecture">Architecture</option>
                     <option value="Chemistry">Chemistry</option>
@@ -55,49 +58,75 @@
                 </select>
             </div>
 
-            <div>
+            <div class="form-group button-group">
                 <p>Select the best TUM Campus</p>
 
-                <input type="radio" id="Munich" name="campus" value="Munich">
-                <label for="Munich">Munich</label>
+                <label for="Munich">
+                    <input type="radio" id="Munich" name="campus" value="Munich">
+                    Munich
+                </label>
 
-                <input type="radio" id="Garching" name="campus" value="Garching">
-                <label for="Garching">Garching</label>
+                <label for="Garching">
+                    <input type="radio" id="Garching" name="campus" value="Garching">
+                    Garching
+                </label>
 
-                <input type="radio" id="Weihenstephan" name="campus" value="Weihenstephan">
-                <label for="Weihenstephan">Weihenstephan</label>
+                <label for="Weihenstephan"><input type="radio" id="Weihenstephan" name="campus" value="Weihenstephan">
+                    Weihenstephan
+                </label>
 
-                <input type="radio" id="Straubing" name="campus" value="Straubing">
-                <label for="Straubing">Straubing</label>
+                <label for="Straubing">
+                    <input type="radio" id="Straubing" name="campus" value="Straubing">
+                    Straubing
+                </label>
 
-                <input type="radio" id="Heilbronn" name="campus" value="Heilbronn">
-                <label for="Heilbronn">Heilbronn</label>
+                
+                <label for="Heilbronn">
+                    <input type="radio" id="Heilbronn" name="campus" value="Heilbronn">
+                    Heilbronn
+                </label>
 
-                <input type="radio" id="TUM-Asia" name="campus" value="TUM-Asia">
-                <label for="TUM-Asia">TUM-Asia (GIST)</label>
+                <label for="TUM-Asia">
+                    <input type="radio" id="TUM-Asia" name="campus" value="TUM-Asia">
+                    TUM-Asia (GIST)
+                </label>
             </div>
 
-            <div>
+            <div class="form-group button-group">
 
                 <p>Select the levels of education you have reached at TUM</p>
 
-                <input type="checkbox" id="Bachelor" name="Bachelor" value="Bachelor">
-                <label for="Bachelor">Bachelor's Degree</label>
+                <label for="Bachelor">
+                    <input type="checkbox" id="Bachelor" name="Bachelor" value="Bachelor">
+                    Bachelor's Degree
+                </label>
 
-                <input type="checkbox" id="Master" name="Master" value="Master">
-                <label for="Master">Master's Degree</label>
+    
+                <label for="Master">
+                    <input type="checkbox" id="Master" name="Master" value="Master">
+                    Master's Degree
+                </label>
 
-                <input type="checkbox" id="Medical" name="Medical" value="Medical">
-                <label for="Medical">Medical Studies</label>
+                
+                <label for="Medical">
+                    <input type="checkbox" id="Medical" name="Medical" value="Medical">
+                    Medical Studies
+                </label>
 
-                <input type="checkbox" id="Doctorate" name="Doctorate" value="Doctorate">
-                <label for="Doctorate">Doctorate</label>
+                
+                <label for="Doctorate">
+                    <input type="checkbox" id="Doctorate" name="Doctorate" value="Doctorate">
+                    Doctorate
+                </label>
 
-                <input type="checkbox" id="Studienkolleg" name="Studienkolleg" value="Studienkolleg">
-                <label for="Studienkolleg">Preparatory Study at the Studienkolleg</label>
+                
+                <label for="Studienkolleg">
+                    <input type="checkbox" id="Studienkolleg" name="Studienkolleg" value="Studienkolleg">
+                    Preparatory Study at the Studienkolleg
+                </label>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="feedback">Any comments or suggestions? Leave your Feedback!</label>
 
                 <textarea id="feedback" name="feedback" rows="8" cols="75">Enter your comment here:</textarea>
