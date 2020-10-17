@@ -30,7 +30,7 @@ h1 {
     background-color: rgba(44, 113, 180, 0.82) ;
     display: inline-block;
     text-align: center;
-    width: 65%;
+    width: 50%;
     padding: 1.15rem;
     font-size: 1.2rem;
 }
@@ -67,15 +67,18 @@ textarea {
 #submit-button {
     background-color: rgb(78, 175, 207);
     color: white;
-
     font-size: 1.3rem;
-
     border-radius: 5px;
-
     border: 0px;
-
     width: 100%;
     height: 2rem;
+}
+
+/* Tablets*/ 
+@media (max-width: 1200px) {
+    #survey-form {
+        width: 65%;
+    }
 }
 
 @media (max-width: 736px) {
