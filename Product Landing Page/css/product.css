@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "GeForce Bold";
+    src: url(../fonts/Geforce\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "GeForce Light";
+    src: url(../fonts/Geforce\ Light.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +16,11 @@
 
 body {
     color: white;
-    background-color: #24252a;
+    background-color: black;
     text-align: center;
+    font-family: "GeForce Light";
+    color: rgb(104, 201, 37);
+    font-weight: 500;
 }
 
 header {
@@ -15,6 +28,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 7.5%;
+    margin: 0px auto 40px auto;
+
+    /* position: fixed;
+    top: 0; */
 
     color: black;
     background-color: white;
@@ -33,6 +50,35 @@ header {
 
 .navigation-item {
     padding: 0px 50px;
+    font-size: 1.8rem;
 }
 
+.navigation-item a {
+    text-decoration: none;
+}
+
+#title {
+    font-size: 4rem;
+}
+
+#title-container p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#title-container {
+    margin: 50px auto;
+}
+
+#slogan-container p {
+    line-height: 100%;
+}
+
+.bold {
+    font-family: "GeForce Bold";
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
 
