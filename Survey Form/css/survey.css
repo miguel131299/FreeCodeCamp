@@ -21,18 +21,17 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 5rem;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #survey-form {
     background-color: rgba(44, 113, 180, 0.82) ;
     display: inline-block;
     text-align: center;
-    width: 50%;
+    width: 65%;
     padding: 1.15rem;
-
     font-size: 1.2rem;
 }
 
@@ -61,6 +60,7 @@ label > input {
 
 textarea {
     height: 10rem;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -76,4 +76,11 @@ textarea {
 
     width: 100%;
     height: 2rem;
+}
+
+@media (max-width: 736px) {
+
+    #survey-form {
+        width: 80%;
+    }
 }
