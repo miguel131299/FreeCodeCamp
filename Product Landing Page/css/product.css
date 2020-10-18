@@ -23,6 +23,8 @@ body {
     font-weight: 500;
 }
 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -38,7 +40,7 @@ header {
 }
 
 #header-img {
-    height: 100px;
+    height: 10vw;;
     cursor: pointer;
 }
 
@@ -49,7 +51,7 @@ header {
 }
 
 .navigation-item {
-    padding: 0px 50px;
+    padding: 0px 2vw;
     font-size: 1.8rem;
 }
 
@@ -72,6 +74,10 @@ header {
 
 #slogan-container p {
     line-height: 100%;
+}
+
+#video-container iframe {
+    width: 80vw;
 }
 
 .bold {
