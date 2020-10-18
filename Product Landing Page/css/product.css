@@ -31,7 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 7.5%;
+    padding: 10px 7.5%;
     margin: 0px auto 20px auto;
 
     position: fixed;
@@ -142,6 +142,10 @@ h2 {
     margin: 20px;
 }
 
+.features img {
+    width: 100%;
+}
+
 .features p {
     font-size: 1.2em;
 }
@@ -182,7 +186,11 @@ h2 {
     text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    #header-img {
+        height: 12vh;
+    }
+
     .navigation-list {
         flex-direction: column;
         padding-right: 50px;
@@ -190,6 +198,10 @@ h2 {
 
     .navigation-item {
         font-size: 1.25em;
+    }
+
+    .features {
+        width: 90%;
     }
 }
 
