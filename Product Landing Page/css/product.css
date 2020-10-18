@@ -104,8 +104,34 @@ header {
     font-size: 1.5em;
 }
 
+h2 {
+    font-size: 2em;
+    margin: 20px;
+}
+
+#features-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.features {
+    width: 450px;
+    padding: 10px;
+    border: rgb(104, 201, 37);
+    border-style: solid;
+    margin: 20px;
+}
+
+.features p {
+    font-size: 1.2em;
+}
+
 #video-container iframe {
     width: 80vw;
+    height: 45vw;
+    max-width: 1000px;
+    max-height: 563px;
 }
 
 .separation {
