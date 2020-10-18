@@ -163,3 +163,23 @@ h2 {
     text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+    .navigation-list {
+        flex-direction: column;
+        font-size: 1.5em;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #pricing-container {
+        flex-direction: column;
+    }
+
+    .buy-option {
+        width: 300px;
+        margin: 20px auto;
+    }
+}
+
