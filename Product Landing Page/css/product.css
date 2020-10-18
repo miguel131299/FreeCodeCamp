@@ -81,7 +81,7 @@ header {
     display: flex;
     flex-direction: column;
 
-    max-width: 60%;
+    max-width: 50%;
     margin: 20px auto;
 }
 
@@ -94,7 +94,7 @@ header {
     height: 25px;
 }
 
-#submit-button {
+.btn {
     color: white;
     background-color: rgb(104, 201, 37);
     border: 0px;
@@ -132,6 +132,23 @@ h2 {
     height: 45vw;
     max-width: 1000px;
     max-height: 563px;
+}
+
+#pricing-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.buy-option {
+    padding: 10px;
+    border: rgb(104, 201, 37);
+    border-style: solid;
+    margin: 20px;
+}
+
+.buy-option button {
+    margin: 20px auto 10px auto;
 }
 
 .separation {
