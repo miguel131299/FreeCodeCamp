@@ -1,0 +1,125 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+
+/* Style of Nav Bar */
+header {
+    background-color: darkblue;
+    padding: 0px 15px;
+
+    position: fixed;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+
+    color: white;
+
+}
+
+.navigation-item {
+    padding: 15px 0px;
+
+    transition: all 0.3s ease 0s;
+}
+
+.navigation-item:hover {
+    background-color: teal;
+}
+
+.navigation-item a{
+    text-decoration: none;
+    margin: 0px 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* Style of Main Section */
+
+.main-sections {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header {
+    font-size: 2rem;
+    align-self: center;
+
+    margin-bottom: 20px;
+}
+
+/* Style of About Section */
+
+#about-section {
+    background-color: rgba(145, 7, 7, 0.836);
+}
+
+#about-section p {
+    color: black;
+}
+
+
+/* Style of Work Section */
+
+#work-section {
+    background-color: rgba(53, 3, 100, 0.945);
+
+    text-align: center;
+}
+
+#projects-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+
+    
+}
+
+.project {
+    background-color: royalblue;
+    margin: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project img {
+    flex-shrink: 0;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/* Style of Contact Section */
+
+#contact-section {
+    background-color: rgba(10, 68, 2, 0.836);
+}
+
+@media (max-width: 700px) {
+    #work-section {
+        height: 170vh;
+    }
+}
+
+
